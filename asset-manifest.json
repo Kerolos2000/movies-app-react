@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/movies-app-react/static/css/main.ca8c18b8.css",
+    "main.js": "/movies-app-react/static/js/main.174f6a04.js",
+    "static/media/fa-solid-900.ttf": "/movies-app-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/movies-app-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/Fotor_AI.png": "/movies-app-react/static/media/Fotor_AI.f6e567a3a6c9e2d40e1c.png",
+    "static/media/fa-solid-900.woff2": "/movies-app-react/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/movies-app-react/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/movies-app-react/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/404 Error-pana.svg": "/movies-app-react/static/media/404 Error-pana.f3cc1822e9458aaba84d60463cf69234.svg",
+    "static/media/fa-regular-400.woff2": "/movies-app-react/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/movies-app-react/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/movies-app-react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/movies-app-react/index.html",
+    "main.ca8c18b8.css.map": "/movies-app-react/static/css/main.ca8c18b8.css.map",
+    "main.174f6a04.js.map": "/movies-app-react/static/js/main.174f6a04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca8c18b8.css",
+    "static/js/main.174f6a04.js"
+  ]
+}
