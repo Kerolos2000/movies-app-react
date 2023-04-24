@@ -1,0 +1,25 @@
+footer {
+  padding: 10px;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .icons .icon {
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+footer .icons .icon:hover {
+  background-color: var(--borderColor);
+  color: var(--mainColor);
+}/*# sourceMappingURL=Footer.css.map */

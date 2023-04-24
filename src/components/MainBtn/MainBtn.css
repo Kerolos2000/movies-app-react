@@ -1,0 +1,16 @@
+button {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  transition: 0.5s;
+  border-radius: 5px !important;
+}
+
+.main-btn {
+  background: var(--borderColor);
+  color: var(--whiteColor);
+  border: 2px solid var(--borderColor);
+}
+.main-btn:hover {
+  background: var(--mainColor);
+  color: var(--whiteColor);
+}/*# sourceMappingURL=MainBtn.css.map */

@@ -1,0 +1,41 @@
+.left {
+  img {
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    margin-top: 1rem;
+  }
+}
+.right {
+  & > * {
+    margin-bottom: 0.8rem;
+  }
+  img {
+    max-width: 100%;
+  }
+  @media (max-width: 991px) {
+    margin-top: 1rem;
+    img {
+      display: none;
+    }
+  }
+}
+
+.biography {
+  white-space: break-spaces;
+}
+
+.img {
+  height: 100%;
+  background: linear-gradient(45deg, #0a0d14, #4e525c);
+  animation: img 1s infinite alternate-reverse;
+  transition: 0.5s;
+}
+@keyframes img {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

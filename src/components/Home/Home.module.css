@@ -1,0 +1,25 @@
+.maimSlider {
+  position: relative;
+}
+.maimSlider .containerx {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -20px);
+}
+@media (max-width: 991px) {
+  .maimSlider .containerx {
+    transform: translate(-50%, -5px);
+    font-size: 1rem;
+  }
+  .maimSlider .containerx .title {
+    font-size: 1rem;
+  }
+  .maimSlider .containerx .SecondSliderImg {
+    max-width: 100%;
+  }
+}
+.maimSlider img {
+  width: 100%;
+  max-height: 45vh;
+}/*# sourceMappingURL=Home.module.css.map */
