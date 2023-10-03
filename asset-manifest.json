@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/movies-app-react/static/css/main.2897fb1e.css",
-    "main.js": "/movies-app-react/static/js/main.43fda0da.js",
+    "main.js": "/movies-app-react/static/js/main.e1d05354.js",
     "static/media/fa-solid-900.ttf": "/movies-app-react/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/movies-app-react/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/Fotor_AI.png": "/movies-app-react/static/media/Fotor_AI.f6e567a3a6c9e2d40e1c.png",
@@ -14,10 +14,10 @@
     "static/media/fa-v4compatibility.woff2": "/movies-app-react/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/movies-app-react/index.html",
     "main.2897fb1e.css.map": "/movies-app-react/static/css/main.2897fb1e.css.map",
-    "main.43fda0da.js.map": "/movies-app-react/static/js/main.43fda0da.js.map"
+    "main.e1d05354.js.map": "/movies-app-react/static/js/main.e1d05354.js.map"
   },
   "entrypoints": [
     "static/css/main.2897fb1e.css",
-    "static/js/main.43fda0da.js"
+    "static/js/main.e1d05354.js"
   ]
 }
