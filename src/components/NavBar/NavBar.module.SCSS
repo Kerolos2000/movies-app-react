@@ -1,0 +1,24 @@
+.navLink {
+  color: var(--whiteColor);
+  transition: 0.5s;
+  opacity: 0.5;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--whiteColor);
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transition: 0.5s;
+  }
+  &:hover {
+    color: var(--whiteColor);
+    opacity: 1;
+    &::after {
+      width: 70%;
+    }
+  }
+}

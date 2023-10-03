@@ -1,0 +1,48 @@
+.allCard {
+  position: relative;
+}
+.allCard .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.allCard .card .img {
+  height: 100%;
+}
+.allCard .card div.img {
+  background: linear-gradient(45deg, #0a0d14, #4e525c);
+  animation: img 1s infinite alternate-reverse;
+  transition: 0.5s;
+}
+@keyframes img {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.allCard .card p {
+  padding-block: 0.5rem;
+  font-weight: 600;
+}
+.allCard .rate {
+  background: var(--blueColor);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.allCard .rate::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  bottom: -50%;
+  border: 10px solid;
+  border-color: #1986ad transparent transparent transparent;
+  z-index: -1;
+}/*# sourceMappingURL=Card.module.css.map */

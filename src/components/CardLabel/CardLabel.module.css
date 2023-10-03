@@ -1,0 +1,26 @@
+.allCardLabel .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.allCardLabel .card .textOne::after {
+  width: 25%;
+  top: -15px;
+}
+.allCardLabel .card .textTwo::after {
+  width: 100%;
+  bottom: -15px;
+  left: 0;
+}
+.allCardLabel .card .textOne,
+.allCardLabel .card .textTwo {
+  position: relative;
+}
+.allCardLabel .card .textOne::after,
+.allCardLabel .card .textTwo::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: var(--borderColor);
+}/*# sourceMappingURL=CardLabel.module.css.map */

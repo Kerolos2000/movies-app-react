@@ -1,0 +1,24 @@
+.navLink {
+  color: var(--whiteColor);
+  transition: 0.5s;
+  opacity: 0.5;
+  position: relative;
+}
+.navLink::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--whiteColor);
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+  transition: 0.5s;
+}
+.navLink:hover {
+  color: var(--whiteColor);
+  opacity: 1;
+}
+.navLink:hover::after {
+  width: 70%;
+}/*# sourceMappingURL=NavBar.module.css.map */
