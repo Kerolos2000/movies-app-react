@@ -1,10 +1,10 @@
-import { Formik, useFormik } from "formik";
-import * as Yup from "yup";
-import React, { useRef, useState } from "react";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
-import MainBtn from "../MainBtn/MainBtn";
+import { useFormik } from "formik";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import { Link, useNavigate } from "react-router-dom";
+import * as Yup from "yup";
+import MainBtn from "../MainBtn/MainBtn";
 
 export default function Login({ saveUserData, userData }) {
   const [islaoding, setIslaoding] = useState(false);
@@ -22,7 +22,7 @@ export default function Login({ saveUserData, userData }) {
           localStorage.setItem("userName", res.data.user.name);
           saveUserData();
           setIslaoding(false);
-          navigate("/movies-app-react/");
+          navigate("/");
         }
       })
       .catch((error) => {
@@ -69,6 +69,7 @@ export default function Login({ saveUserData, userData }) {
       </Helmet>
       <section className="container py-3" id="Register">
         <h2>Login Now :</h2>
+        <span>(test.test123@test.com / Test123)</span>
         {error ? <div className="alert h5 fw-bold">{error}</div> : null}
         <form onSubmit={formik.handleSubmit} className="form">
           <div className="mb-2">
@@ -137,7 +138,7 @@ export default function Login({ saveUserData, userData }) {
               <MainBtn theam={"main-btn"} text={"Login"} type={"submit"} />
             )}
           </div>
-          <Link to="/movies-app-react/forgot">Forgot Your Password ?</Link>
+          <Link to="/forgot">Forgot Your Password ?</Link>
         </form>
       </section>
     </>

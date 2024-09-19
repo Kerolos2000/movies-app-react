@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import style from "./MainSlider.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Autoplay } from "swiper";
+import { Link } from "react-router-dom";
+import { Autoplay, FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import style from "./MainSlider.module.css";
 export default function MainSlider({ dataFromApi, pathX, home }) {
   let [data, setData] = useState(dataFromApi);
 
@@ -44,7 +44,7 @@ export default function MainSlider({ dataFromApi, pathX, home }) {
               <div className={style.img}></div>
             )}
             {home ? null : (
-              <Link to={`/movies-app-react/${pathX}/${el.id}`}>
+              <Link to={`/${pathX}/${el.id}`}>
                 <p className="small m-0">
                   {(el.title || el.original_title || el.name)
                     .split(" ")

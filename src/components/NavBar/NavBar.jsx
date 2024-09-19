@@ -1,23 +1,23 @@
+import React from "react";
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Dropdown, DropdownButton } from "react-bootstrap";
-import React from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import style from "./NavBar.module.css";
 function BasicExample({ userData, setUserData }) {
   let navigate = useNavigate();
   function logout() {
     localStorage.removeItem("userToken");
-    navigate("/movies-app-react/login");
+    navigate("/login");
     setUserData(null);
   }
 
   function search(val) {
     if (val.trim() !== "") {
-      navigate(`/movies-app-react/search/${val}`);
+      navigate(`/search/${val}`);
     } else {
-      navigate("/movies-app-react");
+      navigate("");
     }
   }
 
@@ -25,7 +25,7 @@ function BasicExample({ userData, setUserData }) {
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container fluid>
         <Navbar.Brand>
-          <Link to="/movies-app-react">
+          <Link to="">
             <h3 className="fw-bold m-0">Noxe</h3>
           </Link>
         </Navbar.Brand>
@@ -35,22 +35,22 @@ function BasicExample({ userData, setUserData }) {
           {userData === null ? null : (
             <Nav className="me-auto">
               <Nav.Item>
-                <NavLink className={`${style.navLink} nav-link`} to="/movies-app-react/">
+                <NavLink className={`${style.navLink} nav-link`} to="/">
                   Home
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className={`${style.navLink} nav-link`} to="/movies-app-react/movies">
+                <NavLink className={`${style.navLink} nav-link`} to="/movies">
                   Movies
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className={`${style.navLink} nav-link`} to="/movies-app-react/tvShow">
+                <NavLink className={`${style.navLink} nav-link`} to="/tvShow">
                   Tv Show
                 </NavLink>
               </Nav.Item>
               <Nav.Item>
-                <NavLink className={`${style.navLink} nav-link`} to="/movies-app-react/people">
+                <NavLink className={`${style.navLink} nav-link`} to="/people">
                   People
                 </NavLink>
               </Nav.Item>
@@ -96,7 +96,7 @@ function BasicExample({ userData, setUserData }) {
                 <Dropdown>
                   <Link
                     className={`${style.navLink} dropdown-item cursor-pointer`}
-                    to="/movies-app-react/editData"
+                    to="/editData"
                   >
                     {userData?.name}
                   </Link>
@@ -115,14 +115,14 @@ function BasicExample({ userData, setUserData }) {
             <>
               <Nav>
                 <Nav.Item className="nav-item">
-                  <NavLink className={`${style.navLink} nav-link`} to="/movies-app-react/login">
+                  <NavLink className={`${style.navLink} nav-link`} to="/login">
                     Login
                   </NavLink>
                 </Nav.Item>
                 <Nav.Item className="nav-item">
                   <NavLink
                     className={`${style.navLink} nav-link`}
-                    to="/movies-app-react/register"
+                    to="/register"
                   >
                     Register
                   </NavLink>

@@ -1,11 +1,11 @@
 import { useFormik } from "formik";
-import * as Yup from "yup";
 import React, { useState } from "react";
+import * as Yup from "yup";
 
 import axios from "axios";
+import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
 import MainBtn from "../MainBtn/MainBtn";
-import { Helmet } from "react-helmet";
 
 export default function Login({ saveUserData }) {
   const [islaoding, setIslaoding] = useState(false);
@@ -23,7 +23,7 @@ export default function Login({ saveUserData }) {
       .then((res) => {
         console.log(res);
         setIslaoding(false);
-        navigate("/movies-app-react/reset");
+        navigate("/reset");
       })
       .catch((error) => {
         setIslaoding(false);

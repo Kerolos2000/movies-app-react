@@ -1,28 +1,28 @@
+import jwtDecode from "jwt-decode";
 import React, { useEffect, useState } from "react";
 import {
   createBrowserRouter,
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
-import Home from "./components/Home/Home";
-import Movies from "./components/Movies/Movies";
-import TvShow from "./components/TvShow/TvShow";
-import People from "./components/People/People";
-import Forgotpassword from "./components/Forgotpassword/Forgotpassword";
-import Resetpassword from "./components/Resetpassword/Resetpassword";
-import Updatepassword from "./components/Updatepassword/Updatepassword";
 import EditProfileDataLayout from "./components/EditProfileDataLayout/EditProfileDataLayout";
 import EditProfileDataPassword from "./components/EditProfileDataPassword/EditProfileDataPassword";
-import MovieDetails from "./components/MovieDetails/MovieDetails";
+import Forgotpassword from "./components/Forgotpassword/Forgotpassword";
+import Home from "./components/Home/Home";
+import Layout from "./components/Layout/Layout";
 import Login from "./components/Login/Login";
-import Register from "./components/Register/Register";
+import MovieDetails from "./components/MovieDetails/MovieDetails";
+import Movies from "./components/Movies/Movies";
 import NotFound from "./components/NotFound/NotFound";
-import GetMoviesContextProvider from "./context/GetMoviesContext";
+import People from "./components/People/People";
 import PeopleDetails from "./components/PeopleDetails/PeopleDetails";
-import TvShowDetails from "./components/TvShowDetails/TvShowDetails";
-import jwtDecode from "jwt-decode";
+import Register from "./components/Register/Register";
+import Resetpassword from "./components/Resetpassword/Resetpassword";
 import Search from "./components/Search/Search";
+import TvShow from "./components/TvShow/TvShow";
+import TvShowDetails from "./components/TvShowDetails/TvShowDetails";
+import Updatepassword from "./components/Updatepassword/Updatepassword";
+import GetMoviesContextProvider from "./context/GetMoviesContext";
 
 export default function App() {
   const [userData, setUserData] = useState(null);
@@ -39,7 +39,7 @@ export default function App() {
 
   function IsUserNotLogin(props) {
     if (localStorage.getItem("userToken") === null) {
-      return <Navigate to={"/movies-app-react/login"} />;
+      return <Navigate to={"/login"} />;
     } else {
       return props.children;
     }
@@ -47,7 +47,7 @@ export default function App() {
 
   function IsUserLogin(props) {
     if (localStorage.getItem("userToken") !== null) {
-      return <Navigate to={"/movies-app-react"} />;
+      return <Navigate to={"/"} />;
     } else {
       return props.children;
     }
@@ -57,13 +57,13 @@ export default function App() {
     if (localStorage.getItem("userVerify")) {
       return props.children;
     } else {
-      return <Navigate to={"/movies-app-react"} />;
+      return <Navigate to={"/"} />;
     }
   }
 
   let routes = createBrowserRouter([
     {
-      path: "movies-app-react",
+      path: "/",
       element: <Layout setUserData={setUserData} userData={userData} />,
       children: [
         {

@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Card.module.css";
 import { Link } from "react-router-dom";
+import style from "./Card.module.css";
 export default function Card({ img, name, rate, pathX, to }) {
   return (
     <>
@@ -19,7 +19,7 @@ export default function Card({ img, name, rate, pathX, to }) {
             <div className={style.img}></div>
           )}
           {name && (
-            <Link to={`/movies-app-react/${pathX}/${to}`}>
+            <Link to={`/${pathX}/${to}`}>
               <p className="small">{name}</p>
             </Link>
           )}
